@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import backgroundImage from '../assets/images/starsOnBlack.jpg'; // Adjust the path if necessary
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
 
   useEffect(() => {
     document.body.style.backgroundImage = `url(${backgroundImage})`;
@@ -18,19 +16,20 @@ const Contact = () => {
     };
   }, []);
 
-  const formFieldStyle = { marginBottom: '30px' };
-  const formContainerStyle = {
+  
+  const ContainerStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#f0f0f0',
     fontFamily: "'Work Sans', sans-serif",
     border: '2px solid black',
-    padding: '20px',
+    margin: '8% auto',
+    padding: '2%',
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
     maxWidth: '500px',
-    margin: '0 auto',
+    
   };
   const inputStyle = { 
     marginTop: '10px',
@@ -40,74 +39,36 @@ const Contact = () => {
     borderRadius: '5px',
     border: '1px solid #ccc',
   };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
+  const iconContainerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '5%'
+  };
+  const iconStyle = {
+    margin: '0 20px',
   };
 
+
   return (
-    <div style={formContainerStyle}>
-      <h2>Contact Me</h2>
-      <p>Let's work together! Please fill out and submit the form below. I will respond as quickly as I can!</p>
-      <form onSubmit={handleSubmit}>
-        <div style={formFieldStyle}>
-          <label>
-            Name:
-            <input
-              style={inputStyle}
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </label>
+    <div style={ContainerStyle}>
+      <h1>Contact Me</h1>
+        <div>
+          <h2>Email: AdamMcMains@gmail.com</h2>
         </div>
-        <div style={formFieldStyle}>
-          <label>
-            Email:
-            <input
-              style={inputStyle}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              title="Please enter a valid email address."
-            />
-          </label>
+        <div>
+          <h2>Phone: (971)-600-8632</h2>
         </div>
-        <div style={formFieldStyle}>
-          <label>
-            Questions or Comments:
-            <textarea
-              style={inputStyle}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <input 
-          type="submit" 
-          value="Submit" 
-          style={{ 
-          ...inputStyle, 
-          cursor: 'pointer', 
-          backgroundColor: '#007BFF', 
-          color: '#fff', 
-          border: 'none', 
-          borderRadius: '5px', 
-          padding: '10px 20px', 
-          fontSize: '1em', 
-          transition: 'all 0.3s ease',
-          ':hover': {
-            backgroundColor: '#0056b3',
-            transform: 'scale(1.05)'
-          }
-        }} 
-      />
-      </form>
+        <div style = {iconContainerStyle}>
+      <a style={iconStyle} href="https://github.com/AdamMcMains" target="_blank" rel="noopener noreferrer">
+        <FaGithub size={24} />
+      </a>
+      <a style={iconStyle} href="https://www.linkedin.com/in/adam-mcmains-6aa91b314/" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin size={24} />
+      </a>
+      <a style={iconStyle} href="https://instagram.com/AdamMcmains" target="_blank" rel="noopener noreferrer">
+        <FaInstagram size={24} />
+      </a>
+      </div>
     </div>
   );
 };

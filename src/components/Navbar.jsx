@@ -1,26 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import headerImg from '../assets/images/darkBlueClouds.jpg';
 
 const Navbar = () => {
   const navbarStyle = {
     display: 'flex',
-
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    position: 'fixed',
-    top: '2%',
-    width: 'fit-content',
-    margin: '0 auto',
-    left: 0,
-    right: 0,
+    justifyContent: 'center',
+    top: '0',
+    width: '100%',
+    padding: '20px',
     marginBottom: 0,
+    backgroundImage: `url(${headerImg})`,
   };
 
   const linkStyle = {
     textDecoration: 'none',
     color: 'white',
     padding: '0 30px',
-    fontSize: '20px',
+    fontSize: '30px',
     fontFamily: "'Work Sans', sans-serif",
   };
 

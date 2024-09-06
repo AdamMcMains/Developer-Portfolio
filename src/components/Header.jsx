@@ -6,26 +6,29 @@ const Header = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '30%',
+    height: '100px',
     width: '100%',
     backgroundImage: `url(${headerImg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
-    marginTop: 0, // Add margin to make navbar on top
+    borderTop: '5px solid lightgrey',
     borderBottom: '5px solid lightgrey',
   };
 
   const h1Style = {
+    display: 'flex',
+    justifyContent: 'center',
     color: 'white', 
     padding: '10px',
-    marginLeft: '-75px',
     fontFamily: "'Work Sans', sans-serif",
+    fontSize: '350%',
   };
+
 
   return (
     <div style={headerStyle}>
-      <h1 style={h1Style}></h1>
+      <h1 style={h1Style}> Adam McMains </h1>
     </div>
   );
 };

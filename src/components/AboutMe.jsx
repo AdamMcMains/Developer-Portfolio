@@ -6,7 +6,7 @@ const AboutMe = () => {
   const aboutMeStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    padding: '2%',
+    padding: '1.5%',
     backgroundColor: '#f0f0f0',
     fontFamily: "'Work Sans', sans-serif",
     color: '#333',
@@ -31,8 +31,7 @@ const AboutMe = () => {
     width: '35%', // Adjust the width to make room for the new section
     fontSize: '18px',
     padding: '2%',
-    paddingTop: '1%',
-    marginBottom: '1%',
+    margin: '1%',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
     borderRadius: '10px', // Add rounded corners
     backgroundColor: '#fff', // Add a background color
@@ -44,22 +43,22 @@ const AboutMe = () => {
     <div style={aboutMeStyle}>
       <img src={myPicture} alt="Me" style={imageStyle} />
       <div style = {cardStyle}>
-        <h2>About Me</h2> 
+        <h1>About Me</h1> 
         
           <p>
-            placeholder.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
           </p>
           <p>
-            placeholder.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
           </p>
           <p>
-            placeholder.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
           </p>
       </div>
 
       <div style = {cardStyle}>
-        <h2>Technologies & Knowledge</h2>
-        <div style = {{height: '80%', overflowY: 'scroll'}}>  
+        <h1>Technologies & Knowledge</h1>
+        <div style = {{height: '80%'}}>  
           <ul>
             {technologies.map((tech, index) => (
               <li key={index}>{tech}</li>
