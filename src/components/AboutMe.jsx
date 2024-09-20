@@ -1,5 +1,5 @@
 import React from 'react';
-import myPicture from '../assets/images/placeholder.jpg'; // Replace with the path to your picture
+import myPicture from '../assets/images/pp1.jpg'; // Replace with the path to your picture
 import backgroundImg from '../assets/images/starsOnBlack.jpg';
 
 const AboutMe = () => {
@@ -20,7 +20,7 @@ const AboutMe = () => {
     width: '30%',
     height: '550px',
     marginRight: '2%',
-    borderRadius: '50%', // Make the image circular
+    borderRadius: '30%', // Make the image circular
     border: '2px solid lightgrey',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
     position: 'relative',
@@ -29,15 +29,14 @@ const AboutMe = () => {
 
   const cardStyle = {
     width: '35%', // Adjust the width to make room for the new section
-    fontSize: '18px',
-    padding: '2%',
-    margin: '1%',
+    fontSize: '20px',
+    padding: '20px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
     borderRadius: '10px', // Add rounded corners
     backgroundColor: '#fff', // Add a background color
     
   };
-  const technologies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Bootstrap', 'APIs', 'JQuery', 'JSON', 'AJAX', 'Agile Development', 'Object Oriented Programming', 'Express', 'MySQL', 'NoSQL', 'MVC', 'Sequelize', 'Testing', 'MERN Stack', 'GraphQL']; // Add your technologies
+  const technologies = ['HTML', 'XML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'Bootstrap', 'Tailwind', 'JQuery', 'JSON', 'AJAX', 'OOP', 'MySQL', 'NoSQL', 'MongoDB', 'GraphQL', '3rd Party API', 'Server Side API', 'MVC', 'Unit Testing', 'GIT', 'MERN']; // Add your technologies
   
   return (
     <div style={aboutMeStyle}>
@@ -46,13 +45,13 @@ const AboutMe = () => {
         <h1>About Me</h1> 
         
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+          Hello! My Name is Adam. I recently completed an accelerated program with the University Of Oregon for full stack web development and software engineering. Before that I spent two years at Chemeketa Community College learning all that I could about the world of computer science.
           </p>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+          I am an extremely quick study who is looking for an opportunity to grow my knowledgebase in a professional work environment. For all of the things I do know how to do, I still understand there is still alot that I can learn, and I am always looking for the chance to grow as a developer.
           </p>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+          Ive put together this webpage so that you can learn a little about me and the things that I can do, I look forward to hearing from anyone who would give me their time and I am excited to meet you!
           </p>
       </div>
 
