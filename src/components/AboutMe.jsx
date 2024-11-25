@@ -20,7 +20,7 @@ const AboutMe = () => {
     width: '30%',
     height: '550px',
     marginRight: '2%',
-    borderRadius: '30%', // Make the image circular
+    borderRadius: '50%', // Make the image circular
     border: '2px solid lightgrey',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.4)',
     position: 'relative',
